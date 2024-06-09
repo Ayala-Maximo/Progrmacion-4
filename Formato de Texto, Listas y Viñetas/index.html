@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formato de Texto, Listas y Viñetas</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <center>
+    <h1>Como dar seguimiento a archivos con git</h1>
+    <h4>Por : Maximo Ayala</h4>
+    </center>
+
+    <p>Para hacer seguimiento a archivos con git nesecitaremos primero  nesecitaremos instalarlo
+        <a href="https://youtu.be/zyrhDewSa2c?si=wd6kjk5byeFWTIKN" target="_blank">Video Tutorial para su intalacion</a>.
+        Tras instalarlo  podremos hacer <b>seguimientos, ramas y retoceder</b> cambios de cualquier tipo de archivo ¿y para que 
+        no sirve esto? bueno hay multiples razones por que nos pueda llegar aser utiles tales como :
+    </p>
+
+    <ul class="custom-list unordered-list">
+        <li>Podemos volver a versiones antiguas del archivo.</li>
+        <li>Podemos hacer varias ramas distintas del archivo para comparar.</li>
+        <li>Podemos hacer un registro de los cambios.</li>
+    </ul>
+
+    <p>Y ¿Como hacemos para hacer seguimientos a nuestros archivos?  simple siguiendo los siguientes pasos</p>
+    
+    <div>
+      
+        <ol class="custom-list">
+            <li>
+                <h2>Crear un repositorio<br></h2>
+                <p><br>El primer paso será crear un repositorio, que se hace seleccionando con clic izquierdo en una carpeta 
+                    que servirá como recipiente, con GIT BASH.<br></p>
+                <img src="Imagenes/Imagen de WhatsApp 2024-06-09 a las 00.49.58_73ffaddc.jpg" alt="GIT BASH">
+                <h3><br>Luego nos saldrá la terminal de git<br></h3>    
+                <img src="Imagenes/git bash.PNG" alt="Terminal">
+                <p>Luego tendremos que colocar el siguiente comando: <b>git init</b><br></p>
+                <img src="Imagenes/GitInit1.jpg" alt="git init">
+            </li>
+
+            <li>
+                <h2>Agregar un archivo<br></h2>
+                <p><br>Podemos guardar cualquier tipo de archivo, pero para hacerlo fácil usaremos un .txt. Primero lo creamos y le damos nombre ("Hola Mundo").<br></p>
+                <img src="Imagenes/hola.PNG" alt="Hola Mundo">
+                <p><br>Después en el GIT Bash escribimos <b>git add .</b> esto hará que se guarden todos los archivos en el repositorio.<br></p>
+                <img src="Imagenes/add.PNG" alt="GIT ADD">
+                <p>Nota: los archivos se guardaron pero no se tiene registro de los cambios.</p>
+            </li>
+            
+            <li>
+                <h2>Guardar el registro de los cambios</h2>
+                <p>Para guardar nuestros cambios, vamos a la terminal git bash y escribimos <b>git commit -m "Hola mundo"</b> (aunque puede ser cualquier cosa dentro del "").</p>
+                <img src="Imagenes/commit.PNG" alt="GIT COMMIT">
+                <p>Después escribiremos en el archivo "hola mundo" y volveremos a escribir en la terminal git bash <b>git add .</b> y luego <b>git commit -m "Texto agregado"</b>.</p>
+            </li>
+
+            <li>
+                <h2>Volver a versiones anteriores</h2>
+                <p>Ahora que tenemos dos commits, podemos volver a versiones anteriores. Debemos escribir el comando <b>git log</b>, que nos dará un registro de todos nuestros commits.</p>
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20220101100132/Screenshot760.png" alt="LOG">
+                <p>Luego tomaremos el momento al que queramos volver con el comando <b>git checkout "nombre del commit"</b>. Esto hará que volvamos al estado seleccionado.</p>
+            </li>
+        </ol>
+    </div>
+    
+</body>
+</html>
