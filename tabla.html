@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            color: black;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        /* Selecciona las últimas dos filas de la tabla */
+        tr:nth-last-child(-n+1) {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td>Nombre</td>
+            <td>Apellido</td>
+            <td>Fecha de nacimiento</td>
+            <td>DNI</td>
+        </tr>
+        <tr>
+            <td>Juan</td>
+            <td>Lopez</td>
+            <td>25/4/1995</td>
+            <td>743274327</td>
+        </tr>
+        <tr>
+            <td>Mariano</td>
+            <td>Diaz</td>
+            <td>23/8/2004</td>
+            <td>474342938392</td>
+        </tr>
+        <tr>
+            <td>Ramon</td>
+            <td>Castillo</td>
+            <td>21/1/1980</td>
+            <td>234342342342</td>
+        </tr>
+        <tr>
+            <td colspan="4"></td>
+        </tr>
+    </table>
+</body>
+</html>
