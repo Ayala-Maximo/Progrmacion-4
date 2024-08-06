@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title>
+    <link rel="stylesheet" href="c.css">
+</head>
+<body>
+    <div class="bloc">
+    <h3>Completar los datos</h3>
+
+    <form action="input.html" method="get" enctype="multipart/form-data">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        <label for="nombre">Apellido:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+        
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="fecha_nacimiento">Dia:</label><br>
+        <input type="text" id="Dia" name="Dia"><br>
+        <label for="fecha_nacimiento">Mes:</label><br>
+        <input type="text" id="mes" name="mes"><br>
+        <label for="fecha_nacimiento">Año:</label><br>
+        <input type="text" id="Año" name="Año"><br><br>
+
+        <label for="genero">Género:</label><br>
+        <input type="radio" id="hombre" name="genero" value="Hombre">
+        <label for="hombre">Hombre</label><br>
+        <input type="radio" id="mujer" name="genero" value="Mujer">
+        <label for="mujer">Mujer</label><br><br>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+    </form>
+</div>
+</body>
+</html>
